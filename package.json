@@ -1,0 +1,16 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "is an CRUD api rest with login and sign-up with tokens ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pfranccino",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moongoose": "0.0.5"
+  }
+}
