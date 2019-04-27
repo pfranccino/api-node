@@ -16,16 +16,12 @@ email  : {
 },
   password: {
     type : String,
-    required : [true,'Need a password']
+    required : [true,'Need a password'],
+    select : false
     
 }
 
 })
 
-userSchema.methods.JSON = function(){
 
-    let user = this
-    delete user.password
-    return user
-}
 module.exports = mongoose.model('User', userSchema)
