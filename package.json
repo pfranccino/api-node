@@ -2,7 +2,7 @@
   "name": "api-node",
   "version": "1.0.0",
   "description": "is an CRUD api rest with login and sign-up with tokens ",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "lodash": "^4.17.11",
     "mongoose": "^5.5.3"
   }
 }
