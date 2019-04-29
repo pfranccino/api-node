@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
+let mongooseHidden = require('mongoose-hidden')({ defaultHidden: { password: true } })
 let Schema  = mongoose.Schema;
+
 
 
 
@@ -17,11 +19,14 @@ email  : {
   password: {
     type : String,
     required : [true,'Need a password'],
-    select : false
     
 }
 
 })
+
+userSchema.plugin(mongooseHidden)
+
+
 
 
 module.exports = mongoose.model('User', userSchema)
